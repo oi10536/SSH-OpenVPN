@@ -199,7 +199,7 @@ rm -f install.sh
 
 # info
 clear
-figlet "TONZA"
+figlet "TONZA-VPN"
 echo "Script WebSSH Auto Install"
 echo "OpenSSH  : 22, 143"
 echo "Dropbear : 80, 443"
@@ -210,9 +210,9 @@ echo "Nginx      :  http://$MYIP:99"
 echo "Web    :  http://$MYIP:99"
 echo "Webmin   : http://$MYIP:10000/"
 echo "IPv6     : [off]"
-echo "Modified by TONZA"
+echo "Modified by TONZA-VPN"
 echo "VPS AUTO REBOOT TIAP JAM 12 MALAM"
 echo "==========================================="
-figlet "TONZA"
+figlet "TONZA-VPN"
 cd
 rm -f /root/debian7.sh
