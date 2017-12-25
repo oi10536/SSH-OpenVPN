@@ -123,13 +123,13 @@ service dropbear restart
 # install squid3
 cd
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/squid3.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/squid3.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 # install webmin
 cd
-wget -O webmin-current.deb "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/webmin-current.deb"
+wget -O webmin-current.deb "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/webmin-current.deb"
 dpkg -i --force-all webmin-current.deb;
 apt-get -y -f install;
 rm /root/webmin-current.deb
@@ -137,16 +137,16 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/user-list.sh"
-wget -O resvis "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/resvis.sh"
-wget -O speedtest "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/info.sh"
-wget -O about "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/about.sh"
+wget -O menu "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/hapus.sh"
+wget -O cek "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-login.sh"
+wget -O member "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-list.sh"
+wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
+wget -O speedtest "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/info.sh"
+wget -O about "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -176,7 +176,7 @@ echo "unset HISTFILE" >> /etc/profile
 
 # install myweb
 cd /home/vps/public_html/
-wget -O /home/vps/public_html/myweb.tar "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/myweb.tar"
+wget -O /home/vps/public_html/myweb.tar "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/myweb.tar"
 cd /home/vps/public_html/
 tar xf myweb.tar
 
@@ -199,7 +199,7 @@ rm -f install.sh
 
 # info
 clear
-figlet "THAI-VPN"
+figlet "TONZA"
 echo "Script WebSSH Auto Install"
 echo "OpenSSH  : 22, 143"
 echo "Dropbear : 80, 443"
@@ -210,9 +210,9 @@ echo "Nginx      :  http://$MYIP:99"
 echo "Web    :  http://$MYIP:99"
 echo "Webmin   : http://$MYIP:10000/"
 echo "IPv6     : [off]"
-echo "Modified by THAI-VPN"
+echo "Modified by TONZA"
 echo "VPS AUTO REBOOT TIAP JAM 12 MALAM"
 echo "==========================================="
-figlet "THAI-VPN"
+figlet "TONZA"
 cd
 rm -f /root/debian7.sh
