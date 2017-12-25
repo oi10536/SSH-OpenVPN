@@ -31,9 +31,9 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # set repo
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/sources.list.debian7"
-wget "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/dotdeb.gpg"
-wget "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/jcameron-key.asc"
+wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/sources.list.debian7"
+wget "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/dotdeb.gpg"
+wget "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/jcameron-key.asc"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 cat jcameron-key.asc | apt-key add -;rm jcameron-key.asc
 
@@ -63,9 +63,9 @@ cd
 apt-get -y install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/vps.conf"
 sed -i 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 sed -i $MYPORT /etc/nginx/conf.d/vps.conf;
@@ -75,30 +75,30 @@ chown -R www-data:www-data /home/vps/public_html && chmod -R g+rw /home/vps/publ
 service php5-fpm restart && service nginx restart
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/1194.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/1194.conf"
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
-wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/iptables"
+wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/iptables"
 chmod +x /etc/network/if-up.d/iptables
 service openvpn restart
 
 # konfigurasi openvpn
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/client-1194.conf"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/client-1194.conf"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /home/vps/public_html/
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/badvpn-udpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/badvpn-udpgw"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/dathai/SSH-OpenVPN/master/API/badvpn-udpgw64"
+  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/badvpn-udpgw64"
 fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
