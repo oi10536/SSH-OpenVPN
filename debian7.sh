@@ -54,7 +54,7 @@ apt-get install neofetch
 
 echo "clear" >> .bashrc
 echo 'echo -e "ยินดีต้อนรับสู่เซิร์ฟเวอร์ $HOSTNAME"' >> .bashrc
-echo 'echo -e "Script mod by THAI-VPN"' >> .bashrc
+echo 'echo -e "Script mod by TONZA-VPN"' >> .bashrc
 echo 'echo -e "พิมพ์ | menu |เพื่อแสดงรายการคำสั่ง"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
