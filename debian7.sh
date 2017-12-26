@@ -1,5 +1,5 @@
 #!/bin/bash
-#THAI-VPN
+#TONZA-VPN
 
 # go to root
 cd
