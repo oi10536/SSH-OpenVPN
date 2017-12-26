@@ -1,5 +1,7 @@
 #!/bin/bash
 #TONZA-VPN
+#Website https://github.com/oi10536/
+#debian 7-9 หรือเปล่า ทดสอบให้หน่อย
 
 # go to root
 cd
