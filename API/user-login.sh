@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Script Copyright www.fornesia.com
-# Mod by THAI-VPN
+# Mod by TONZA-VPN
 # ==========================
 # 
 
@@ -50,6 +50,6 @@ echo "------------------------------------------------"
 
 echo "";
 
-echo "Mod by THAI-VPN";
+echo "Mod by TONZA-VPN";
 
 echo "";
