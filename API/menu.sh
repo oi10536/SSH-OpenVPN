@@ -4,6 +4,7 @@
 echo -e "* menu      : แสดงรายการคำสั่ง"
 echo -e "* usernew   : สร้างบัญชี SSH และ OpenVPN"
 echo -e "* trial     : สร้างบัญชีทดลองใช้"
+echo -e "* user-limit: จำกัดผู้ใช้งาน
 echo -e "* hapus     : ลบบัญชี SSH & OpenVPN"
 echo -e "* cek       : ตรวจสอบการเข้าสู่ระบบของผู้ใช้"
 echo -e "* member    : รายชื่อสมาชิก SSH & OpenVPN"
