@@ -74,8 +74,8 @@ rm -f /tmp/user2
 exit 0
 ;;
 *)
-  echo " gunakan perintah ./userlimit.sh 1 untuk limit 1 login saja"
-  echo " atau ./userlimit.sh 2  untuk melimit max 2 login"   
+  echo " ใช้คำสั่ง ./userlimit.sh 1 สำหรับการเข้าสู่ระบบแบบ จำกัด 1 เท่านั้น"
+  echo " ใช้คำสั่ง ./userlimit.sh 2 เพื่อเพิ่มการเข้าสู่ระบบสูงสุด 2 ครั้ง"   
 rm -f /tmp/pid
 rm -f /tmp/pid2
 rm -f /tmp/pids
@@ -156,9 +156,9 @@ rm -f /tmp/user2
 exit 0
 ;;
 *)
-  echo " gunakan perintah userlmtop 1 untuk limit 1 login saja"
-  echo " atau userlmtop 2  untuk melimit max 2 login"
-  echo " Modified by IlhamGanteng"     
+  echo " ใช้คำสั่ง userlmtop 1 เพื่อ จำกัด การล็อกอิน 1 ครั้งเท่านั้น"
+  echo " ใช้คำสั่ง userlmtop 2 เพื่อสร้างการเข้าสู่ระบบสูงสุด 2 ครั้ง"
+  echo " Modified by Tonza-VPN"     
 rm -f /tmp/pid
 rm -f /tmp/pid2
 rm -f /tmp/pids
