@@ -142,6 +142,7 @@ cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/trial.sh"
+wget -O user-limit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
 wget -O hapus "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-list.sh"
@@ -155,6 +156,7 @@ echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 chmod +x menu
 chmod +x usernew
 chmod +x trial
+chmod +x user-limit
 chmod +x hapus
 chmod +x cek
 chmod +x member
