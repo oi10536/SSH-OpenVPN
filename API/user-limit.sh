@@ -1,5 +1,4 @@
 #!/bin/bash
-# Program untuk membatasi jumlah login user dropbear
 PARAM=$1
 clear
 
