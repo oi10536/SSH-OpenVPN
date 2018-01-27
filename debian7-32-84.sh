@@ -113,7 +113,11 @@ tar cf client.tar 1194-client.ovpn pass.txt
 cp client.tar /home/vps/public_html/
 
 # install badvpn
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/badvpn-udpgw"
+cd
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/badvpn-udpgw"
+if [ "$OS" == "x86_64" ]; then
+  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/badvpn-udpgw64"
+fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
