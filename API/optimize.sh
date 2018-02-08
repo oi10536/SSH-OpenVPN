@@ -1,5 +1,5 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "เพิ่มประสิทธิภาพเซิร์ฟเวอร์ V. 1.0" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "เพิ่มประสิทธิภาพเซิร์ฟเวอร์ by TONZA-VPN V. 1.0" ; tput sgr0
 echo ""
 #
 tput setaf 2 ; tput bold ; echo "	การอัพเดตแพ็คเกจ..." ; tput sgr0
