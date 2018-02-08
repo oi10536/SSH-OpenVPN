@@ -144,6 +144,8 @@ wget -O usernew "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/AP
 wget -O trial "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-login.sh"
+wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
+wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
 wget -O member "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-list.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/speedtest_cli.py"
@@ -157,6 +159,8 @@ chmod +x usernew
 chmod +x trial
 chmod +x hapus
 chmod +x cek
+chmod +x userlimit
+chmod +x userlimitssh
 chmod +x member
 chmod +x resvis
 chmod +x speedtest
