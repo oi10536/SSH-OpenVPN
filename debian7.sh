@@ -152,6 +152,7 @@ wget -O chd "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ch
 wget -O delexp "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/speedtest_cli.py"
+wget -O optimize "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/optimize.sh"
 wget -O info "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/info.sh"
 wget -O about "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/about.sh"
 
@@ -170,6 +171,7 @@ chmod +x chd
 chmod +x delexp
 chmod +x resvis
 chmod +x speedtest
+chmod +x optimize
 chmod +x info
 chmod +x about
 
