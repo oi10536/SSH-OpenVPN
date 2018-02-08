@@ -148,6 +148,7 @@ wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/
 wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
 wget -O userbackup "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/userbackup.sh"
 wget -O member "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-list.sh"
+wget -O chd "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/chd.sh"
 wget -O delexp "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/speedtest_cli.py"
@@ -165,6 +166,7 @@ chmod +x userlimit
 chmod +x userlimitssh
 chmod +x userbackup
 chmod +x member
+chmod +x chd
 chmod +x delexp
 chmod +x resvis
 chmod +x speedtest
