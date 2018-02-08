@@ -146,6 +146,7 @@ wget -O hapus "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/
 wget -O cek "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-login.sh"
 wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
 wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
+wget -O userbackup "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/userbackup.sh"
 wget -O member "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-list.sh"
 wget -O delexp "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
@@ -162,6 +163,7 @@ chmod +x hapus
 chmod +x cek
 chmod +x userlimit
 chmod +x userlimitssh
+chmod +x userbackup
 chmod +x member
 chmod +x delexp
 chmod +x resvis
