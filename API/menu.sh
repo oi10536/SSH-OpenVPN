@@ -9,6 +9,7 @@ echo -e "* cek       : ตรวจสอบการเข้าสู่ระ
 echo -e "* userlimit : จำกัด การเข้าสู่ระบบ Dropbear การใช้งาน ให้พิมพ์ userlimit 1"
 echo -e "* userlimitssh : จำกัด การเข้าสู่ระบบ sshd การใช้งาน ให้พิมพ์ userlimitssh 1"
 echo -e "* member    : รายชื่อสมาชิก SSH & OpenVPN"
+echo -e "* delexp    : ลบชื่อสมาชิก SSH & OpenVPN ที่วันหมดอายุแล้ว"
 echo -e "* resvis    : restart service dropbear, webmin"
 echo -e "              squid3, OpenVPN dan SSH"
 echo -e "* reboot    : reboot VPS"
