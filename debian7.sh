@@ -131,7 +131,7 @@ service squid3 restart
 
 # install webmin
 cd
-wget -O webmin-current.deb "http://www.webmin.com/download/deb/webmin-current.deb"
+wget -O webmin-current.deb "https://github.com/oi10536/SSH-OpenVPN/blob/master/API/webmin-current.deb?raw=true"
 dpkg -i --force-all webmin-current.deb;
 apt-get -y -f install;
 rm /root/webmin-current.deb
