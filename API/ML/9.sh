@@ -1,13 +1,10 @@
 #!/bin/bash
 # Script unlock dropbear, webmin, squid3, openvpn, openssh
-# Dev by Tonza-VPN
-echo -e "Please in put name user for unlock or unbanned user"
-
+echo -e " ป้อนรายชื่อที่จะยกเลิกระงับการเชื่อมต่อ"
+echo -e "  "
 read -p "Username : " Login
 
 usermod -U $Login
 echo -e ""
-echo -e "====Detail SSH Account===="
-echo -e "Username: $Login :Has Unlocked You can login"
-clear
-menuneko
+echo -e "   ดำเนินการเรียบร้อยแล้ว   "
+menu
