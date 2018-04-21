@@ -150,6 +150,7 @@ wget -O 7 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/7
 wget -O 8 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/8.sh"
 wget -O 9 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/9.sh"
 wget -O 10 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/10.sh"
+wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
 wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/speedtest_cli.py"
@@ -167,6 +168,7 @@ chmod +x 7
 chmod +x 8
 chmod +x 9
 chmod +x 10
+chmod +x resvis
 chmod +x userlimit
 chmod +x userlimitssh
 chmod +x speedtest
