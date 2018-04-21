@@ -13,7 +13,7 @@ echo -e "|${color3} 6${color4}|	: แสดงรายชื่อผู้ใ�
 echo -e "|${color3} 7${color4}|	: แสดงรายชื่อผู้ใช้งาน OpenVPN"
 echo -e "|${color3} 8${color4}|	: Banned User SSH"
 echo -e "|${color3} 9${color4}|	: Undo Banned User SSH"
-echo -e "|${color3} 10${color4}|	: เปลี่ยนรหัสหรือจำนวนวัน
+echo -e "|${color3} 10${color4}|: เปลี่ยนรหัสหรือจำนวนวัน
 echo -e "*resvis	: restart service dropbear, webmin"
 echo -e "                squid3, OpenVPN dan SSH"
 echo -e "* userlimit : จำกัด การเข้าสู่ระบบ Dropbear การใช้งาน ให้พิมพ์ userlimit 1"
