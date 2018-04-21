@@ -1,10 +1,10 @@
 #!/bin/bash
 #Script del SSH & OpenVPN
-read -p "SSH user name will be removed : " User
+read -p "กรุณาพิมพ์ชื่อผู้ที่ต้องการจะลบ : " User
 
 if getent passwd $User > /dev/null 2>&1; then
         userdel $User
-        echo -e "User $User Was deleted."
+        echo -e "ผู้ใช้งาน $User ได้ลบออกแล้ว"
 else
-        echo -e "Ainz: Neko $User Not Found."
+        echo -e "ค้นหา $User ไม่เจอ"
 fi
