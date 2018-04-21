@@ -11,4 +11,4 @@ Webmin : http://IPVPS:10000/
 OpenVPN TCP 1194
 
 
-wget https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/debian7-8.sh && chmod +x debian7-8.sh && ./debian7-8.sh
+wget https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/debian8.sh && chmod +x debian8.sh && ./debian8.sh
