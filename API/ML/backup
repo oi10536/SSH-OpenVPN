@@ -1,0 +1,53 @@
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "การสำรองข้อมูลผู้ใช้" ; tput sgr0
+echo "ต้องการทำอะไร?"
+echo ""
+echo "1 - สร้างการสำรองข้อมูล"
+echo "2 - คืนค่าการสำรองข้อมูล"
+echo "3 - ออก"
+echo ""
+
+read -p "Opção: " -e -i 3 opcao
+
+if [[ "$opcao" = '1' ]]; then
+	if [ -f "/root/usuarios.db" ]
+	then
+		echo ""
+		echo "การสร้างข้อมูลสำรอง..."
+		echo ""
+		tar cvf /root/backup.vps /root/usuarios.db /etc/shadow /etc/passwd /etc/group /etc/gshadow
+		echo ""
+		echo "Arquivo /root/backup.vps criado com sucesso."
+		echo ""
+	else
+		echo ""
+		echo "การสร้างข้อมูลสำรอง..."
+		echo ""
+		tar cvf /root/backup.vps /etc/shadow /etc/passwd /etc/group /etc/gshadow
+		echo ""
+		echo "Arquivo /root/backup.vps criado com sucesso."
+		echo ""
+	fi
+fi
+if [[ "$opcao" = '2' ]]; then
+	if [ -f "/root/backup.vps" ]
+	then
+		echo ""
+		echo "คืนค่าการสำรองข้อมูล..."
+		echo ""
+		sleep 1
+		cp /root/backup.vps /backup.vps
+		cd /
+		tar -xvf backup.vps
+		rm /backup.vps
+		echo ""
+		echo "ผู้ใช้และรหัสผ่านที่นำเข้าสำเร็จแล้ว"
+		echo ""
+		exit
+	else
+		echo ""
+		echo "ไม่พบไฟล์ /root/backup.vps!!"
+		echo "ตรวจสอบให้แน่ใจว่าอยู่ในไดเร็กทอรี /root/ com o nome backup.vps"
+		echo ""
+		exit
+	fi
+fi
