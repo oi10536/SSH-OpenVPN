@@ -139,16 +139,17 @@ service webmin restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/menu.sh"
-wget -O 1 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/1.sh"
-wget -O 2 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/2.sh"
-wget -O 3 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/3.sh"
-wget -O 4 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/4.sh"
-wget -O 5 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/5.sh"
-wget -O 6 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/6.sh"
-wget -O 7 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/7.sh"
-wget -O 8 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/8.sh"
-wget -O 9 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/9.sh"
+wget -O 01 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/01.sh"
+wget -O 02 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/02.sh"
+wget -O 03 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/03.sh"
+wget -O 04 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/04.sh"
+wget -O 05 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/05.sh"
+wget -O 06 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/06.sh"
+wget -O 07 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/07.sh"
+wget -O 08 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/08.sh"
+wget -O 09 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/09.sh"
 wget -O 10 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/10.sh"
+wget -O 11 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/11.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
 wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
@@ -167,16 +168,18 @@ chmod +x 7
 chmod +x 8
 chmod +x 9
 chmod +x 10
+chmod +x 11
 chmod +x resvis
 chmod +x userlimit
 chmod +x userlimitssh
 chmod +x speedtest
 
+
 cd
 
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 cd /etc/openvpn/
-wget -q -O /etc/openvpn/client2.ovpn "http://ptt101.hopto.org:81/kad78/conf/client2.conf"
+wget -q -O /etc/openvpn/client2.ovpn "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/client2.conf"
 MYIP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | grep -v '192.168'`;
 sed -i s/xxxxxxxxx/$MYIP/g /etc/openvpn/client2.ovpn;
 
@@ -184,15 +187,15 @@ cd
 #set remote and host
 
 cd /usr/bin
-wget -O srh "http://ptt101.hopto.org:81/sangman/add/k/srh.sh"
-chmod +x srh
+wget -O 12 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/12.sh"
+chmod +x 12
 cd 
 
 #reset remote and host
 
 cd /usr/bin
-wget -O rerh "http://ptt101.hopto.org:81/sangman/add/k/rerh.sh"
-chmod +x rerh
+wget -O 13 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/13.sh"
+chmod +x 13
 
 cd 
 
