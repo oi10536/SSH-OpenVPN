@@ -7,4 +7,4 @@ read -p "Username : " Login
 usermod -L $Login
 echo -e " "
 echo -e "   ดำเนินการเรียบร้อยแล้ว   "
-menu
+echo -e "  "
