@@ -150,6 +150,7 @@ wget -O 08 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/
 wget -O 09 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/09.sh"
 wget -O 10 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/10.sh"
 wget -O 11 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/11.sh"
+wget -O 12 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/12.sh"
 wget -O resvis "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/resvis.sh"
 wget -O userlimit "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limit.sh"
 wget -O userlimitssh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/user-limitssh.sh"
@@ -169,6 +170,7 @@ chmod +x 8
 chmod +x 9
 chmod +x 10
 chmod +x 11
+chmod +x 12
 chmod +x resvis
 chmod +x userlimit
 chmod +x userlimitssh
@@ -183,23 +185,36 @@ wget -q -O /etc/openvpn/client2.ovpn "https://raw.githubusercontent.com/oi10536/
 MYIP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | grep -v '192.168'`;
 sed -i s/xxxxxxxxx/$MYIP/g /etc/openvpn/client2.ovpn;
 
+wget -q -O /etc/openvpn/client3pc.ovpn "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/client3pc.conf"
+
+sed -i s/xxxxxxxxx/$MYIP/g /etc/openvpn/client3pc.ovpn;
+
+wget -q -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/client-1194.conf"
+
+sed -i s/xxxxxxxxx/$MYIP/g /etc/openvpn/client.ovpn;
+
+
 cd
 #set remote and host
 
 cd /usr/bin
-wget -O 12 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/12.sh"
-chmod +x 12
+wget -O 13 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/13.sh"
+chmod +x 13
 cd 
 
 #reset remote and host
 
 cd /usr/bin
-wget -O 13 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/13.sh"
-chmod +x 13
+wget -O 14 "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/14.sh"
+chmod +x 14
 
 cd 
 
 cp /etc/openvpn/client2.ovpn /home/vps/public_html/client2.ovpn
+
+cp /etc/openvpn/client.ovpn /home/vps/public_html/client.ovpn
+
+cp /etc/openvpn/client3pc.ovpn /home/vps/public_html/computer.ovpn
 
 
 
