@@ -11,7 +11,7 @@ echo -e "|${color3} 04${color4}|	: ลบผู้ใช้งานที่ห
 echo -e "|${color3} 05${color4}|	: แสดงรายชื่อผู้ใช้งาน "
 echo -e "|${color3} 06${color4}|	: แสดงรายชื่อผู้ใช้งาน http injector"
 echo -e "|${color3} 07${color4}|	: แสดงรายชื่อผู้ใช้งาน OpenVPN"
-echo -e "|${color3} 08${color4}|	: เช็ครายชื่อผู้ใช้ที่จะหมดอายุ"
+echo -e "|${color3} 08${color4}|	: แสดงบัญชีที่กำลังจะหมดอายุภายใน/วัน"
 echo -e "|${color3} 09${color4}|	: Banned User SSH"
 echo -e "|${color3} 10${color4}|	: Undo Banned User SSH"
 echo -e "|${color3} 11${color4}|: เปลี่ยนรหัสหรือจำนวนวัน"
