@@ -216,6 +216,57 @@ cp /etc/openvpn/client.ovpn /home/vps/public_html/client.ovpn
 
 cp /etc/openvpn/client3pc.ovpn /home/vps/public_html/computer.ovpn
 
+apt-get install python
+
+cd /usr/local/bin
+
+wget -O bwuser https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/bwuser
+	
+chmod +x bwuser
+	
+cd
+
+#backup
+
+cd /usr/local/bin
+
+wget -O backup "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/backup.sh"
+	
+chmod +x backup
+	
+cd
+
+#rebackup
+
+cd /usr/local/bin
+
+wget -O rebackup "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/rebackup.sh"
+	
+chmod +x rebackup
+	
+cd
+
+mkdir /home/vps/public_html/hjr
+
+mkdir /home/vps/public_html/hjr2
+
+mkdir /home/vps/public_html/hjr3
+
+
+#bwh
+
+cd /usr/local/bin
+
+wget -O bwh "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/bwuser"
+	
+chmod +x bwh
+	
+cd
+
+
+--------
+
+
 
 
 # finishing
