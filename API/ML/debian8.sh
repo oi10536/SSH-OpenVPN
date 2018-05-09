@@ -220,7 +220,7 @@ apt-get install python
 
 cd /usr/local/bin
 
-wget -O bwuser https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/bwuser
+wget -O bwuser "https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/API/ML/bwuser"
 	
 chmod +x bwuser
 	
