@@ -139,11 +139,11 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -q -O kasang "http://ptt101.hopto.org:81/kad78/kasang.sh" 
+wget -q -O lock "https://github.com/oi10536/SSH-OpenVPN/raw/master/API/ML/lock.sh" 
 echo "30 3 * * * root /sbin/reboot" > 
 /etc/cron.d/reboot
-chmod +x kasang
-./kasang 
+chmod +x lock
+./lock 
 
 # finishing
 cd
@@ -199,4 +199,4 @@ echo "VPS AUTO REBOOT TIAP JAM 12 MALAM"
 echo "==========================================="
 figlet "TONZA-VPN"
 cd
-rm -f /root/debian7.sh
+rm -f /root/debian8.sh
