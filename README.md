@@ -15,4 +15,4 @@ wget https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/debian7.sh && 
 
 OCS_PanelCentos6
 
-yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/OCSPanelCentOs6.sh && chmod +x OCSCentos.sh && ./OCSCentos.sh && rm -f OCSCentos.sh && history -c
+yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/oi10536/SSH-OpenVPN/master/OCSPanelCentOs6.sh && chmod +x OCSPanelCentOs6.sh && ./OCSPanelCentOs6.sh && rm -f OCSPanelCentOs6.sh && history -c
