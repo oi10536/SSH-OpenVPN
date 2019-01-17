@@ -4,20 +4,6 @@
 #<BODY text='ffffff'>
 # Mod by TOZNA-VPN
 # ==================================================
-rm -f install
-clear
-echo ""
-echo " Install... ( 1% )"
-echo ""
-echo " กรุณาใส่รหัสเพื่อติดตั้ง "
-echo ""
-#user pass
-read -p "Password : " chai
-if [ $chai -eq 12345 ]; then
-clear
-echo ""
-read -p "รหัสถูกต้องยอมให้ติดตั้งพิมพ์ y : " pungya
-	
 # go to root
 cd
 
